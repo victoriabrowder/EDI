@@ -9,12 +9,15 @@ function draw() {
   
   translate (60, 60);
   
-  for(x=0; )
+  for(y=0; y< 600 ; y = y + 300) { //loop to create a row of squares in the x direction 
+  for(x=0; x< 600 ; x = x + 300) { //loop to create a row of squares in the x direction
+      quad(x,y,
+      x + 300,y,
+      x + 300, y + 300,
+      x, y + 300);
   
-  quad(0,0,
-      300,0,
-      300,300,
-      0, 300);
+  }
+  }
   
-  noLoop ();
+
 }
