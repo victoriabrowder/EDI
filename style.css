@@ -23,6 +23,10 @@ h1{
      top: 0%;
 }
 
+h3{
+color: pink;
+display: inline; background: white;
+}
 p{
     position: absolute;
     font-size: 0.875em;
