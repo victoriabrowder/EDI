@@ -1,6 +1,8 @@
 html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  overflow: hidden;
   font-family:'Roboto', sans-serif;
   background-color: rgb(234, 165, 242);
 }
@@ -15,7 +17,7 @@ img {
 }
 
 h1{
-  color: purple;
+  color: white;
      position: absolute;
      left: 50%;
      transform: translateX(-50%) translateY(-50%);
