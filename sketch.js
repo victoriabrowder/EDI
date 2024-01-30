@@ -4,7 +4,9 @@ function preload(){
   gif = loadImage('assets/VictoriaGIF80px.gif'); //dimensions 80 by 80 px
 }
 function setup() { //runs once
-  createCanvas(windowWidth, windowWidth);
+  createCanvas(windowWidth, windowHeight);
+  cursor('assets/explode.png');
+  fill('magenta');
   strokeWeight(0);
 
 }
@@ -16,11 +18,11 @@ function draw() {
   
   var sideLen = windowWidth/num; //variable for side length of each square
   
-  for(y = 0; y < windowWidth; y = y + sideLen) {
+  for(y = 0; y < 2 * windowHeight; y = y + sideLen) {
      // loop to create rows of squares in the y direction
     
   
-  for(x = 0; x < windowWidth; x = x + sideLen){ // loop to create rows of squares in the x direction
+  for(x = 0; x < 2* windowWidth; x = x + sideLen){ // loop to create rows of squares in the x direction
   
   quad(x,y,
       x + sideLen,y,
